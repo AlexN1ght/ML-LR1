@@ -68,3 +68,17 @@ sclf.score(Star_test, SLables_test)
 
 
 # %%
+# sklearn GaussianNB
+from sklearn.naive_bayes import GaussianNB
+gnb = GaussianNB()
+gnb.fit(Star_train, SLables_train)
+gnb.score(Star_test, SLables_test)
+# %%
+# GaussianNB Self Implimentation
+from GNBClassifier import GNBClassifier
+
+sgnb = GNBClassifier()
+sgnb.fit(Star_train, SLables_train)
+sgnb.score(Star_test, SLables_test)
+
+# %%
