@@ -58,3 +58,13 @@ clf.fit(Star_train, SLables_train)
 # Scoring
 clf.score(Star_test, SLables_test)
 # %%
+# KNN Self Implimentation
+import KnnClassifier
+from KnnClassifier import KNNClassifier
+
+sclf = KNNClassifier(5)
+sclf.fit(Star_train, SLables_train)
+sclf.score(Star_test, SLables_test)
+
+
+# %%
